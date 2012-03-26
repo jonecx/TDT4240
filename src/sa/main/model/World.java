@@ -6,9 +6,9 @@ import android.graphics.Paint;
 
 public class World {
 	
-	private Paint paint;	
+	//private Paint paint;	
 	public World(){
-		this.paint = paint;
+		
 	}
 	public void draw(Canvas canvas){
 		Paint paint =new Paint();

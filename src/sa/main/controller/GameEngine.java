@@ -4,19 +4,15 @@ import sa.main.MainThread;
 import sa.main.R;
 import sa.main.model.Player;
 import sa.main.model.Obstacle;
-import sa.main.model.Player;
-import sa.main.model.World;
+
 import sa.main.view.Renderer;
 import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
 public class GameEngine extends SurfaceView implements
 		SurfaceHolder.Callback {
 
@@ -25,19 +21,16 @@ public class GameEngine extends SurfaceView implements
 	private Obstacle obstacle;
 	private GameController gameController;
 	private MainThread mainThread;
-	
-	private World world;
-	
+	@SuppressWarnings("unused")
 	private Paint paint;
-
+	
 	public GameEngine(Context context) {
 		super(context);
-		//intercept events from the surfaceview
+		//intercept events from the surface view
 		getHolder().addCallback(this);
 	
 		obstacle = new Obstacle(BitmapFactory.decodeResource(getResources(), R.drawable.obstacle), 400, 220);
 		player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.obs),40, 220);
-		
 		paint = new Paint();
 		
 		// create the game loop thread

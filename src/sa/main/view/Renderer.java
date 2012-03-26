@@ -1,16 +1,13 @@
 package sa.main.view;
 
 
-import sa.main.controller.GameEngine;
+
 import sa.main.model.Obstacle;
 import sa.main.model.Player;
-import android.content.Context;
+
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.Log;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 
 public class Renderer {
 	
@@ -24,7 +21,7 @@ public class Renderer {
 		this.obstacle = obstacle;
 	}
 	
-	//private gameEngine gameEngine;
+	
 	public void draw(Canvas canvas){
 		
 		canvas.drawRGB(255, 210, 100);

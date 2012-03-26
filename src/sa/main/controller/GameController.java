@@ -1,7 +1,6 @@
 package sa.main.controller;
 
-import android.graphics.BitmapFactory;
-import sa.main.R;
+
 import sa.main.model.Obstacle;
 import sa.main.model.Player;
 
