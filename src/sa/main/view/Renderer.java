@@ -29,7 +29,7 @@ public class Renderer {
 		
 		canvas.drawRGB(255, 210, 100);
 		paint.setColor(Color.BLACK);
-		canvas.drawRect(0, 250, 100, 340, paint);
+		canvas.drawRect(0, 250, canvas.getWidth(), 340, paint);
 		obstacle.draw(canvas);
 		player.draw(canvas);
 		
