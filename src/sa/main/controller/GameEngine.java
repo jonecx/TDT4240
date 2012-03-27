@@ -29,8 +29,8 @@ public class GameEngine extends SurfaceView implements
 		//intercept events from the surface view
 		getHolder().addCallback(this);
 	
-		obstacle = new Obstacle(BitmapFactory.decodeResource(getResources(), R.drawable.obstacle), 400, 220);
-		player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.obs),40, 220);
+		obstacle = new Obstacle(BitmapFactory.decodeResource(getResources(), R.drawable.woodbox), 400, 220);
+		player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.minecart1),40, 220);
 		paint = new Paint();
 		
 		// create the game loop thread
@@ -60,7 +60,9 @@ public class GameEngine extends SurfaceView implements
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 				
-				
+		if (event.getAction()==MotionEvent.ACTION_DOWN){
+			gameController.setTouched(true);
+		}
 		return true;
 	}
 
