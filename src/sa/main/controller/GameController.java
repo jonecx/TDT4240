@@ -38,7 +38,7 @@ public class GameController {
 			player.setJump(false);
 		}
 		player.setJump(this.getTouched());
-		player.update();
+		player.update(System.currentTimeMillis());
 		obstacle.update();
 
 	}

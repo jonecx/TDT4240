@@ -5,12 +5,11 @@ package sa.main.view;
 import sa.main.R;
 import sa.main.model.Obstacle;
 import sa.main.model.Player;
-<<<<<<< HEAD
+
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-=======
->>>>>>> b3ce35cf8abb8f982f4ea04320c3f69a8fdb8dad
+
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
