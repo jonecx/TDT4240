@@ -60,8 +60,7 @@ public class GameEngine extends SurfaceView implements
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 				
-		
-		
+				
 		return true;
 	}
 

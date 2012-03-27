@@ -9,6 +9,7 @@ public class Player {
 	private Bitmap bitmap;
 	private int x;
 	private int y;
+	private boolean jump;
 	private int yDirection;
 	
 	public Player(Bitmap bitmap, int x, int y){
@@ -16,7 +17,10 @@ public class Player {
 		this.x = x;
 		this.y = y;
 		this.yDirection = -1;
+		this.jump= false;
 	}
+	
+	
 
 	public Bitmap getBitmap(){
 		return bitmap;
@@ -41,6 +45,14 @@ public class Player {
 	public void setY(int y){
 		this.y = y;
 	}
+	
+	public boolean getJump(){
+		return jump;
+	}
+	
+	public void setJump(boolean jump){
+		this.jump = jump;
+	}
 
 	public int getyDirection(){
 		return yDirection;
@@ -55,7 +67,9 @@ public class Player {
 	}
 	
 	public void update(){
-		y += getyDirection();
+		if(this.getJump() == true){
+			y += getyDirection();
+		}
 			
 	}
 

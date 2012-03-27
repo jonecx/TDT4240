@@ -4,7 +4,6 @@ package sa.main.view;
 
 import sa.main.model.Obstacle;
 import sa.main.model.Player;
-
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;

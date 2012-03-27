@@ -32,7 +32,6 @@ public class MainThread extends Thread {
 				canvas = this.surfaceHolder.lockCanvas();
 				synchronized (surfaceHolder) {
 					gameEngine.update(canvas);
-					//this.gameEngine.draw(canvas);				
 				}
 			} finally {
 				if (canvas != null) {
