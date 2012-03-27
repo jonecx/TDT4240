@@ -31,7 +31,7 @@ public class GameController {
 		if(player.getY() <= 0){
 			player.setyDirection(1);
 		}
-		if(player.getY() >= 220){
+		if(player.getY() >= 22){
 			player.setyDirection(-1);
 		}
 		if(player.getY() == 220){

@@ -17,7 +17,8 @@ public final class R {
         public static final int minecart3=0x7f020003;
         public static final int obs=0x7f020004;
         public static final int obstacle=0x7f020005;
-        public static final int woodbox=0x7f020006;
+        public static final int spritetrain=0x7f020006;
+        public static final int woodbox=0x7f020007;
     }
     public static final class layout {
         public static final int main=0x7f030000;

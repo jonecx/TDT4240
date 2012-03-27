@@ -69,7 +69,7 @@ public class Player {
 	
 	public void update(){
 		if(this.getJump() == true){
-			y += getyDirection()*2*(System.currentTimeMillis()/1000- time1)*(System.currentTimeMillis()/1000- time1);
+			y += getyDirection()*3*(System.currentTimeMillis()/1000- time1)*(System.currentTimeMillis()/1000- time1);
 		}else{
 			y+=0;
 		}
