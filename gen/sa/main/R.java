@@ -11,6 +11,14 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
+<<<<<<< HEAD
+        public static final int backbutton=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int obs=0x7f020002;
+        public static final int obstacle=0x7f020003;
+        public static final int spritetrain=0x7f020004;
+        public static final int woodbox=0x7f020005;
+=======
         public static final int ic_launcher=0x7f020000;
         public static final int minecart1=0x7f020001;
         public static final int minecart2=0x7f020002;
@@ -19,6 +27,7 @@ public final class R {
         public static final int obstacle=0x7f020005;
         public static final int spritetrain=0x7f020006;
         public static final int woodbox=0x7f020007;
+>>>>>>> b3ce35cf8abb8f982f4ea04320c3f69a8fdb8dad
     }
     public static final class layout {
         public static final int main=0x7f030000;

@@ -40,5 +40,9 @@ public class MainThread extends Thread {
 			}	// end finally
 		}
 	}
+
+	public boolean isRunning() {
+		return running;
+	}
 	
 }

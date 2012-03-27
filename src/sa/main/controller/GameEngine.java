@@ -6,6 +6,7 @@ import sa.main.model.Player;
 import sa.main.model.Obstacle;
 
 import sa.main.view.Renderer;
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -13,6 +14,8 @@ import android.graphics.Paint;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
 public class GameEngine extends SurfaceView implements
 		SurfaceHolder.Callback {
 
@@ -38,6 +41,14 @@ public class GameEngine extends SurfaceView implements
 		gameController = new GameController(player, obstacle);
 		renderer = new Renderer(player, obstacle);
 		
+//		final Button button = (Button) findViewById(R.drawable.backbutton);
+//		button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//            	mainThread.setRunning(false);
+//				((Activity)getContext()).finish();
+//            }
+//        });
+		
 		setFocusable(true);
 	}
 
@@ -59,10 +70,16 @@ public class GameEngine extends SurfaceView implements
 	
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
+<<<<<<< HEAD
+	
+		
+		
+=======
 				
 		if (event.getAction()==MotionEvent.ACTION_DOWN){
 			gameController.setTouched(true);
 		}
+>>>>>>> b3ce35cf8abb8f982f4ea04320c3f69a8fdb8dad
 		return true;
 	}
 
