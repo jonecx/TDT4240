@@ -26,7 +26,7 @@ public class GameController {
 			player.setyDirection(-1);
 		}
 		// Update the lone droid
-		player.update();
+		player.update(System.currentTimeMillis());
 		obstacle.update();
 
 	}

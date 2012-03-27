@@ -30,7 +30,7 @@ public class GameEngine extends SurfaceView implements
 		getHolder().addCallback(this);
 	
 		obstacle = new Obstacle(BitmapFactory.decodeResource(getResources(), R.drawable.woodbox), 400, 220);
-		player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.minecart1),40, 220);
+		player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.spritetrain), 40, 220, 7, 3);
 		paint = new Paint();
 		
 		// create the game loop thread
